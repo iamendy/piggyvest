@@ -1,11 +1,9 @@
-import type { NextPage } from "next";
+import Hero from "../components/Hero";
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
-    <div>
-      <h3 className="text-3xl font-bold text-red-500 underline">Frontend</h3>
+    <div className="flex flex-col justify-center items-center">
+      <Hero />
     </div>
   );
-};
-
-export default Home;
+}
