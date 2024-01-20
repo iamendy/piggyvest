@@ -44,6 +44,8 @@ const Dashboard = () => {
             Withdraw
           </div>
         </div>
+
+        {selected === "save" ? <SaveBox /> : <WithdrawBox />}
       </div>
 
       <ActivityBox />

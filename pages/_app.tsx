@@ -5,6 +5,11 @@ import type { AppProps } from "next/app";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { goerli } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Layout from "../components/Layout";
+import { useEffect, useState } from "react";
+
+const queryClient = new QueryClient();
 
 const projectId = process.env.NEXT_PUBLIC_WC_PROJECT_ID as string;
 
@@ -27,12 +32,30 @@ const wagmiConfig = createConfig({
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
-    <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider chains={chains}>
-        <Component {...pageProps} />
-      </RainbowKitProvider>
-    </WagmiConfig>
+    <>
+      {isLoaded && (
+        <QueryClientProvider client={queryClient}>
+          <WagmiConfig config={wagmiConfig}>
+            <RainbowKitProvider
+              chains={chains}
+              coolMode={true}
+              modalSize="compact"
+            >
+              <Layout>
+                <Component {...pageProps} />
+              </Layout>
+            </RainbowKitProvider>
+          </WagmiConfig>
+        </QueryClientProvider>
+      )}
+    </>
   );
 }
 
