@@ -18,7 +18,7 @@ Users on-ramp fiat, then save and earn in USDT thereby helping them hedge agains
 
 We created and deployed PiggyVest smart contract on ETH Goerli Testnet:
 
-1. PiggyVest 0x23aF55205bdf25C3Cd6153055a926297e848582D - [View on Celo scan](https://celoscan.io/address/0x23aF55205bdf25C3Cd6153055a926297e848582D)
+1. PiggyVest 0x23aF55205bdf25C3Cd6153055a926297e848582D - [View on Eth scan](https://goerli.etherscan.io/address/0x23aF55205bdf25C3Cd6153055a926297e848582D)
 
 Here are some of the recent transactions on PiggyVest:
 
