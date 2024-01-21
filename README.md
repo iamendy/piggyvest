@@ -1,6 +1,6 @@
 # PiggyVest [ETHLGHO]
 
-Live Demo - [Watch Video](https://) <br />
+Live Demo - [Watch Video](https://drive.google.com/file/d/1nsJecAsWC1_jTUkeqEWH6t98Xni9B4sd/view) <br />
 Demo Link - [PiggyVest dApp](https://piggyvestdapp.vercel.app) <br />
 Slides - [Presentation Slides](https://piggyvestdapp.vercel.app/PiggyVestSlides.pdf)
 
@@ -10,7 +10,9 @@ PiggyVest is an open-source widget that allows Africans to save better and earn 
 
 We aim to help Africans hedge against hyperinflation by integrating Aave to provide an intuitive interface for saving and easily getting yield on USDT.
 
-![PiggyVest Dashboard](https://piggyvestapp.vercel.app/img/preview.png)
+Users on-ramp fiat, then save and earn in USDT thereby helping them hedge against inflation.
+
+![PiggyVest Dashboard](https://piggyvestdapp.vercel.app/img/preview.png)
 
 ## 💻 How we built PiggyVest
 
@@ -20,9 +22,9 @@ We created and deployed PiggyVest smart contract on ETH Goerli Testnet:
 
 Here are some of the recent transactions on PiggyVest:
 
-1. Savings [View txn on Eth Scan](https://celoscan.io/tx/)
+1. Savings [View txn on Eth Scan](https://goerli.etherscan.io/tx/0x1856c51aa13fba9ed301c57b83086b8ed9e4bf61ad5e8d36b5e7ae681138e948)
 
-2. Withdraw [View txn on Eth Scan](https://celoscan.io/tx/)
+2. Withdraw [View txn on Eth Scan](https://goerli.etherscan.io/tx/0xc8679506fb0e84575b0ed6117a89d27f7dd391fd97c8a9a2ca429712ab1cf742)
 
 This is an original work by our team. We built our solution using: **`NextJs/Typescript`**, **`Wagmi`**, **`Rainbowkit`**, **`TailwindCSS`** and **`Remix`**
 
