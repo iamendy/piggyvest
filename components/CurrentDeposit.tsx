@@ -30,10 +30,10 @@ const CurrentDeposit = () => {
             //@ts-ignore
             parseFloat(
               //@ts-ignore
-              ethers?.formatUnits(bal?.hex || "0", 18)
+              ethers?.formatUnits(bal?.hex || "0", 6)
             ).toFixed(2)
           }{" "}
-          cUSD
+          USDT
         </span>
         <small className="text-xs text-gray/40">
           ~{" "}
@@ -41,7 +41,7 @@ const CurrentDeposit = () => {
             //@ts-ignore
             parseFloat(
               //@ts-ignore
-              ethers?.formatUnits(bal?.hex || "0", 18)
+              ethers?.formatUnits(bal?.hex || "0", 6)
             ).toFixed(2) * 1000
           }{" "}
           NGN

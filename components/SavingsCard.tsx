@@ -1,6 +1,5 @@
 import { ethers } from "ethers";
 import useGetBalance from "../hooks/useGetBalance";
-import { useState } from "react";
 import { useContractRead, useAccount } from "wagmi";
 import connect from "../constants/connect";
 import Balance from "./icons/Balance";
@@ -34,10 +33,10 @@ const SavingsCard = () => {
                   //@ts-ignore
                   parseFloat(
                     //@ts-ignore
-                    ethers?.formatUnits(balance || "0", 18)
+                    ethers?.formatUnits(balance || "0", 6)
                   ).toFixed(2)
                 }{" "}
-                cUSD
+                USDT
               </span>
               <small className="text-xs text-gray/40">
                 ~{" "}
@@ -45,7 +44,7 @@ const SavingsCard = () => {
                   //@ts-ignore
                   parseFloat(
                     //@ts-ignore
-                    ethers?.formatUnits(balance || "0", 18)
+                    ethers?.formatUnits(balance || "0", 6)
                   ).toFixed(2) * 1000
                 }{" "}
                 NGN
@@ -69,10 +68,10 @@ const SavingsCard = () => {
                 //@ts-ignore
                 parseFloat(
                   //@ts-ignore
-                  ethers?.formatUnits(mcusdBal || "0", 6)
+                  ethers?.formatUnits(mcusdBal || "0", 16)
                 ).toFixed(2)
               }{" "}
-              cUSD
+              USDT
             </span>
 
             <span>
@@ -80,10 +79,10 @@ const SavingsCard = () => {
                 //@ts-ignore
                 parseFloat(
                   //@ts-ignore
-                  ethers?.formatUnits(mcusdBal || "0", 18)
+                  ethers?.formatUnits(mcusdBal || "0", 6)
                 ).toFixed(2)
               }{" "}
-              cUSD
+              USDT
             </span>
             <small className="text-xs text-gray/40">
               ~{" "}
@@ -91,7 +90,7 @@ const SavingsCard = () => {
                 //@ts-ignore
                 parseFloat(
                   //@ts-ignore
-                  ethers?.formatUnits(mcusdBal || "0", 18)
+                  ethers?.formatUnits(mcusdBal || "0", 6)
                 ).toFixed(2) * 1000
               }{" "}
               NGN
