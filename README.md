@@ -1,29 +1,47 @@
-This is a [RainbowKit](https://rainbowkit.com) + [wagmi](https://wagmi.sh) + [Next.js](https://nextjs.org/) project bootstrapped with [`create-rainbowkit`](https://github.com/rainbow-me/rainbowkit/tree/main/packages/create-rainbowkit).
+# PiggyVest [ETHLGHO]
 
-## Getting Started
+Live Demo - [Watch Video](https://) <br />
+Demo Link - [PiggyVest dApp](https://piggyvestdapp.vercel.app) <br />
+Slides - [Presentation Slides](https://piggyvestdapp.vercel.app/PiggyVestSlides.pdf)
 
-First, run the development server:
+## ✨ Description
 
-```bash
-npm run dev
-```
+PiggyVest is an open-source widget that allows Africans to save better and earn yield.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+We aim to help Africans hedge against hyperinflation by integrating Aave to provide an intuitive interface for saving and easily getting yield on USDT.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+![PiggyVest Dashboard](https://piggyvestapp.vercel.app/img/preview.png)
 
-## Learn More
+## 💻 How we built PiggyVest
 
-To learn more about this stack, take a look at the following resources:
+We created and deployed PiggyVest smart contract on ETH Goerli Testnet:
 
-- [RainbowKit Documentation](https://rainbowkit.com) - Learn how to customize your wallet connection flow.
-- [wagmi Documentation](https://wagmi.sh) - Learn how to interact with Ethereum.
-- [Next.js Documentation](https://nextjs.org/docs) - Learn how to build a Next.js application.
+1. PiggyVest 0x23aF55205bdf25C3Cd6153055a926297e848582D - [View on Celo scan](https://celoscan.io/address/0x23aF55205bdf25C3Cd6153055a926297e848582D)
 
-You can check out [the RainbowKit GitHub repository](https://github.com/rainbow-me/rainbowkit) - your feedback and contributions are welcome!
+Here are some of the recent transactions on PiggyVest:
 
-## Deploy on Vercel
+1. Savings [View txn on Eth Scan](https://celoscan.io/tx/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Withdraw [View txn on Eth Scan](https://celoscan.io/tx/)
 
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This is an original work by our team. We built our solution using: **`NextJs/Typescript`**, **`Wagmi`**, **`Rainbowkit`**, **`TailwindCSS`** and **`Remix`**
+
+## 🧑‍💻 Instructions for testing locally
+
+\***\* Smart contract \*\***
+
+Note: Recommend using [Remix](https://remix.ethereum.org) for quick smart contract deployment, or alternatively hardhat:
+
+1. Deploy `PiggyVest` on ETH Goerli by running the necessary Hardhat script
+
+\***\* Frontend \*\***
+
+2. Update your deployed `PiggyVest` address on the `packages/react-app/constants/connect.ts file.
+
+3. run `cp .env.example .env`
+
+4. Update the fields on the .env file with your keys
+
+5. Run `yarn dev` to start the DApp on your development environment.
+
+6. You can connect from your favourite wallet and enjoy a world of limitless possibilities.

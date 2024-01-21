@@ -1,7 +1,7 @@
 const connect = {
   //piggyvest contract
   lockie: {
-    address: "0x90a41c9ea720AF7f9e3477C706Eb49354EFb2013",
+    address: "0x23aF55205bdf25C3Cd6153055a926297e848582D",
     abi: [
       {
         inputs: [
