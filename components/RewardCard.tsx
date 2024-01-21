@@ -25,10 +25,10 @@ const RewardCard = () => {
               //@ts-ignore
               parseFloat(
                 //@ts-ignore
-                ethers?.formatUnits(mcusdBal || "0", 18)
+                ethers?.formatUnits(mcusdBal || "0", 6)
               ).toFixed(2)
             }{" "}
-            cUSD
+            USDT
           </span>
           <span className="text-gray text-xs">
             {
@@ -38,7 +38,7 @@ const RewardCard = () => {
                 ethers?.formatUnits(mcusdBal || "0", 6)
               ).toFixed(2)
             }{" "}
-            cUSD
+            USDT
           </span>
           <small className="text-xs text-gray/40">
             ~{" "}

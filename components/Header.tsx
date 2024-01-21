@@ -16,10 +16,10 @@ export default function Header() {
   const { address } = useAccount();
 
   return (
-    <nav className="hidden lg:flex justify-between w-full p-4 lg:px-16 lg:py-6 2xl:px-24 text-base-100 font-bold border-b border-b-gray ">
+    <nav className="flex justify-between w-full p-4 lg:px-16 lg:py-6 2xl:px-24 text-base-100 font-bold border-b border-b-gray ">
       <Link href="/" className="flex items-center gap-x-1">
         <Logo />
-        Lockie
+        PiggyVest
       </Link>
 
       <div className="flex items-center space-x-9 text-base-100 font-medium leading-[1.6em]">
