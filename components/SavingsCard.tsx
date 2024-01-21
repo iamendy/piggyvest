@@ -68,7 +68,7 @@ const SavingsCard = () => {
                 //@ts-ignore
                 parseFloat(
                   //@ts-ignore
-                  ethers?.formatUnits(mcusdBal || "0", 16)
+                  ethers?.formatUnits(mcusdBal || "0", 1)
                 ).toFixed(2)
               }{" "}
               USDT

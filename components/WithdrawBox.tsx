@@ -28,7 +28,7 @@ const WithdrawBox = () => {
     functionName: "withdraw",
     args: [
       connect?.cusd?.address,
-      ethers?.parseUnits(debouncedAmount || "0", 18),
+      ethers?.parseUnits(debouncedAmount || "0", 6),
       address,
     ],
   });
@@ -68,7 +68,7 @@ const WithdrawBox = () => {
                 disabled={isLoading || isWaitingTx}
                 className="flex w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                 type="text"
-                placeholder="cUSD"
+                placeholder="USDT"
               ></input>
             </div>
           </div>

@@ -3,7 +3,6 @@ import { useDebounce } from "../hooks/useDebounce";
 import Loader from "./icons/Loader";
 import connect from "../constants/connect";
 import { ethers } from "ethers";
-import Info from "./icons/Info";
 import {
   useContractWrite,
   usePrepareContractWrite,
@@ -11,7 +10,6 @@ import {
 } from "wagmi";
 import APR from "./APR";
 import { useQueryClient } from "@tanstack/react-query";
-import { useToaster } from "react-hot-toast/headless";
 import toast from "react-hot-toast";
 
 const SaveBox = () => {
@@ -32,7 +30,7 @@ const SaveBox = () => {
     args: [
       //@ts-ignore
       connect?.lockie?.address,
-      ethers?.parseUnits(debouncedAmount || "0", 18),
+      ethers?.parseUnits(debouncedAmount || "0", 6),
     ],
   });
 
@@ -59,7 +57,7 @@ const SaveBox = () => {
     //@ts-ignore
     abi: connect?.lockie?.abi,
     functionName: "deposit",
-    args: [ethers?.parseUnits(debouncedAmount || "0", 18), rate],
+    args: [ethers?.parseUnits(debouncedAmount || "0", 6), rate],
   });
 
   const {
@@ -97,7 +95,7 @@ const SaveBox = () => {
                 // disabled={isApproved || isApproving || isWaitingTx}
                 className="flex w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                 type="text"
-                placeholder="cUSD"
+                placeholder="USDT"
               ></input>
             </div>
           </div>

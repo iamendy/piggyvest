@@ -10,7 +10,6 @@ const APR = ({ setRate }: { setRate: Dispatch<SetStateAction<number>> }) => {
     functionName: "getRate",
   });
 
-  data && console.log(data);
   const SECONDS_PER_YEAR = 31536000;
   const ray = Number(BigInt(10 ** 27));
 
@@ -21,8 +20,6 @@ const APR = ({ setRate }: { setRate: Dispatch<SetStateAction<number>> }) => {
 
   const depositAPY =
     (1 + depositAPR / SECONDS_PER_YEAR) ** SECONDS_PER_YEAR - 1;
-
-  console.log(depositAPY);
 
   useEffect(() => {
     //@ts-ignore
